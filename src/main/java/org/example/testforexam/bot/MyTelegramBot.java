@@ -31,7 +31,7 @@ public class MyTelegramBot extends TelegramLongPollingBot {
 
     @Override
     public void onUpdateReceived(Update update) {
-        // Faqat matnli xabarlarni qabul qilamiz
+        // Faqat matnli xabarlarni qabul qilamiz go go go
         if (update.hasMessage() && update.getMessage().hasText()) {
             String chatId = update.getMessage().getChatId().toString();
             String userText = update.getMessage().getText();
